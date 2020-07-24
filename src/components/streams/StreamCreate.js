@@ -20,7 +20,7 @@ class StreamCreate extends React.Component {
     return (
       <div className={className}>
       <label>{label}</label>
-      <input {...input} autoComplete="off" />;
+      <input {...input} autoComplete="off" />
       {this.renderError(meta)}
       </div>
       );
@@ -44,10 +44,10 @@ onSubmit = formValues => {
 const validate = (formValues) => {
   const errors = {}
   if (!formValues.title) {
-    errors.title = "Please enter a title";
+    errors.title = "Please enter a title"
   }
   if (!formValues.description) {
-    errors.description = "Please enter a description";
+    errors.description = "Please enter a description"
   }
   return errors;
 };
